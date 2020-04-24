@@ -1,11 +1,5 @@
 /* # Markdown */
 
-.readme .markdown-body,
-.readme .plain {
-    background: $code-bg !important;
-    border: 1px solid $border-color !important;
-}
-
 code {
     background-color: $tag-bg-color !important;
     color: $code-snippet-color !important;
@@ -16,10 +10,10 @@ code {
         border-color: $light-border-color !important;
     }
     h2 {
-        border-color: $border-color !important;
+        border-color: $light-border-color !important;
     }
     hr {
-        background-color: $border-color !important;
+        background-color: $light-border-color !important;
     }
     blockquote {
         border-color: $border-color !important;

@@ -73,6 +73,19 @@ body {
         background-color: $dropdown-bg !important;
         cursor: not-allowed !important;
     }
+    .btn-primary {
+        color: $bright-text-color !important;
+        background-image: $button-primary-bg-image !important;
+    }
+    .btn-primary:hover {
+        background-image: $button-primary-bg-image-hover !important;
+    }
+    .btn-danger {
+        background-image: $button-danger-bg-image !important;
+    }
+    .btn-danger:hover {
+        background-image: $button-danger-bg-image-hover !important;
+    }
     .gh-header {
         background-color: transparent !important;
     }

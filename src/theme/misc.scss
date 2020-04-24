@@ -127,3 +127,10 @@ table.capped-list tr:nth-child(even) {
 .js-notice .js-notice-dismiss {
     background: $block-bg !important;
 }
+
+/* Invite teammates | Issue-#163 */
+#search-member {
+    background-color: $block-bg !important;
+    color: $bright-text-color !important;
+    border-color: $border-color !important;
+}
