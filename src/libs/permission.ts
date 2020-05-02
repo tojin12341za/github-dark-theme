@@ -1,4 +1,4 @@
-// TODO: Decoupling Chrome instance by https://github.com/mozilla/webextension-polyfill
+// REF: Decoupling Chrome instance by https://github.com/mozilla/webextension-polyfill
 // REF: Chrome permission list https://developer.chrome.com/apps/declare_permissions
 // REF: Chrome permission API https://developer.chrome.com/apps/permissions
 

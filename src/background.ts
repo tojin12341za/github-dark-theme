@@ -7,7 +7,7 @@ const initGithubDarkTheme = () => {
             if (!tab) return;
             if (!tab.url) return;
             if (isUrlInList(fetchUrlString(tab.url), data.excludedUrlList)) return;
-            console.log(tab.url);
+            console.log(`Current URL: ${tab.url}`);
             console.log('Domain List:');
             console.table(data.domainList);
             console.log('Excluded URL List:');
@@ -21,8 +21,6 @@ const initGithubDarkTheme = () => {
 
 (function () {
     runtime.setUninstallURL(config.uninstallQuestionnaire);
-    storage.misc.showStorageOnConsole('domainList');
-    storage.misc.showStorageOnConsole('excludedUrlList');
     storage.sync
         .get([config.storageDomainList, config.storageExcludedUrlList])
         .then(data => {
