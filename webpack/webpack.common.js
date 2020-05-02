@@ -63,6 +63,8 @@ module.exports = {
                 { from: './bulma/css/bulma.min.css', to: './bulma.min.css' },
                 { from: './bulma/css/bulma.css.map', to: './bulma.css.map' },
                 { from: './bulma-extensions/dist/css/bulma-extensions.min.css', to: './bulma-extensions.min.css' },
+                { from: './webextension-polyfill/dist/browser-polyfill.min.js', to: './browser-polyfill.min.js' },
+                { from: './webextension-polyfill/dist/browser-polyfill.min.js.map', to: './browser-polyfill.min.js.map' },
             ],
             {
                 context: 'node_modules',
