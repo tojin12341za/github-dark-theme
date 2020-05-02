@@ -1,6 +1,5 @@
 export { fetchDomainString, fetchUrlString, isUrlInList, isEmpty } from './helper';
 export { inSystemDarkMode } from './helper';
-export { permission } from './permission';
-export { runtime } from './runtime';
-export { storage } from './storage';
-export { tabs } from './tabs';
+export { permission } from './browser/permission';
+export { runtime } from './browser/runtime';
+export { tabs } from './browser/tabs';

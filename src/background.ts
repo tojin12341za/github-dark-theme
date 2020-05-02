@@ -1,9 +1,10 @@
 import { config } from './config';
-import { isEmpty, fetchDomainString, fetchUrlString, isUrlInList, storage, tabs, runtime } from './libs';
+import { isEmpty, fetchDomainString, fetchUrlString, isUrlInList, runtime } from './libs';
+import { browser } from "webextension-polyfill-ts";
 
 const initGithubDarkTheme = () => {
-    chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-        storage.sync.get([config.storageDomainList, config.storageExcludedUrlList]).then(data => {
+    browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+        browser.storage.sync.get([config.storageDomainList, config.storageExcludedUrlList]).then(data => {
             if (!tab) return;
             if (!tab.url) return;
             if (isUrlInList(fetchUrlString(tab.url), data.excludedUrlList)) return;
@@ -13,7 +14,10 @@ const initGithubDarkTheme = () => {
             console.log('Excluded URL List:');
             console.table(data.excludedUrlList);
             if (isUrlInList(fetchDomainString(tab.url), data.domainList)) {
-                tabs.insertCSS(tab.id, config.cssFilePath);
+                browser.tabs.insertCSS(tab.id, {
+                    file: config.cssFilePath,
+                    runAt: 'document_start',
+                });
             }
         });
     });
@@ -21,7 +25,7 @@ const initGithubDarkTheme = () => {
 
 (function () {
     runtime.setUninstallURL(config.uninstallQuestionnaire);
-    storage.sync
+    browser.storage.sync
         .get([config.storageDomainList, config.storageExcludedUrlList])
         .then(data => {
             if (!isEmpty(data.domainList) && !isEmpty(data.excludedUrlList)) return data;
@@ -30,7 +34,7 @@ const initGithubDarkTheme = () => {
                 domainList: config.defaultDomainList,
                 excludedUrlList: config.defaultExcludedUrlList
             }
-            storage.sync.set(data);
+            browser.storage.sync.set(data);
 
             return data;
         })
