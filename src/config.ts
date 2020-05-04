@@ -8,7 +8,7 @@ const config = {
     defaultExcludedUrlList: ['github.com/marketplace'],
     useSystemPrefersScheme: false,
     uninstallQuestionnaire:
-        'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c9PL4pURTlJSFdFUzZUSzNBNUs4N0JaQlhEUkRBTy4u',
+        'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c9PL4pUQ0pFOVpUQzdLRERIQlc4RVZSSEZVSDM2OS4u',
 } as Config;
 
 interface Config {
