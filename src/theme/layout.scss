@@ -3,8 +3,8 @@
 body {
     background-color: $bg-color !important;
     color: $text-color !important;
-    &.page-responsive{
-        .pagehead{
+    &.page-responsive {
+        .pagehead {
             background-color: $bg-color !important;
         }
     }
@@ -325,7 +325,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-   .Box:not(.ml-1) {
+    .Box:not(.ml-1) {
         background-color: $block-bg !important;
         border-color: $border-color !important;
     }
@@ -408,7 +408,7 @@ body {
         background-color: $tag-bg-color !important;
     }
     .bg-yellow-light {
-        background-color: #473f00 !important;
+        background-color: $bg-search-color !important;
     }
     .tag-info {
         color: $link-color !important;
@@ -428,19 +428,19 @@ body {
             background-color: transparent !important;
         }
 
-        & > main{
+        & > main {
             & > div.border-bottom.border-gray-light {
                 background-color: $bg-color !important;
             }
 
-            & > .site-subnav + div{
+            & > .site-subnav + div {
                 background-color: $bg-color !important;
 
-                .bg-blue-light{
+                .bg-blue-light {
                     background-color: transparent !important;
                 }
 
-                .text-gray-light{
+                .text-gray-light {
                     color: $text-color !important;
                 }
             }
@@ -458,7 +458,8 @@ body {
 @media (min-width: 768px) {
     body {
         &.page-responsive {
-            .pagehead, .repohead.experiment-repo-nav {
+            .pagehead,
+            .repohead.experiment-repo-nav {
                 background-color: $head-bg !important;
             }
         }
