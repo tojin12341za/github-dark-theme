@@ -37,3 +37,10 @@ li.notifications-list-item:hover,
 .Box-row--hover-gray:hover {
     background-color: $tag-bg-color !important;
 }
+
+.filter-list {
+    .filter-item:hover {
+        background-color: $dropdown-bg !important;
+        text-decoration: none;
+    }
+}
