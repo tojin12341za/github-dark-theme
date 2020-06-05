@@ -31,7 +31,8 @@
         "@types/angular": "^1.7.0",
         "angular": "^1.7.9",
         "bulma": "^0.8.1",
-        "bulma-extensions": "^6.2.7"
+        "bulma-extensions": "^6.2.7",
+        "content-scripts-register-polyfill": "^1.0.1"
     },
     "devDependencies": {
         "@types/chrome": "0.0.104",
