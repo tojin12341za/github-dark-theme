@@ -12,6 +12,7 @@ module app {
     class PopupController {
         static $inject = ['$scope'];
         private scope: IPopupScope;
+        public hasPermissions: boolean = !!browser.storage;
         public domainList: string[];
         public excludedUrlList: string[];
         public yourDomain: string;

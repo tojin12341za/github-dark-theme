@@ -3,9 +3,10 @@ const config = {
     storageDomainList: 'domainList',
     storageExcludedUrlList: 'excludedUrlList',
     domainList: [],
-    defaultDomainList: ['github.com', 'gist.github.com'],
     excludedUrlList: [],
+    defaultDomainList: ['github.com', 'gist.github.com'],
     defaultExcludedUrlList: ['github.com/marketplace'],
+    defaultThemeBasedOn: 'system-preferred',
     useSystemPrefersScheme: false,
     themeBasedOn: 'system-preferred',
     uninstallQuestionnaire:
@@ -17,9 +18,10 @@ interface Config {
     storageDomainList: string;
     storageExcludedUrlList: string;
     domainList: string[];
-    defaultDomainList: string[];
     excludedUrlList: string[];
+    defaultDomainList: string[];
     defaultExcludedUrlList: string[];
+    defaultThemeBasedOn: 'system-preferred' | 'user-setting';
     useSystemPrefersScheme: boolean;
     themeBasedOn: 'system-preferred' | 'user-setting';
     uninstallQuestionnaire: string;

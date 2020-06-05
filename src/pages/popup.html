@@ -14,7 +14,7 @@
     </head>
     <body ng-app="app">
         <div ng-controller="popupController as ctrl">
-            <section class="section">
+            <section class="section" ng-if="ctrl.hasPermissions">
                 <div class="container is-fluid">
                     <h1 class="title">GitHub Dark Theme</h1>
                     <p class="subtitle">
@@ -108,7 +108,6 @@
                         />
                         <label for="switchRoundedDefault">Enabled Dark Theme{{ctrl.useDarkTheme}}</label>
                     </div> -->
-                    <br/>
                     <div class="message is-warning">
                         <div class="message-body">
                             <p>
@@ -125,6 +124,15 @@
                                 >.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" ng-if="!ctrl.hasPermissions">
+                <div class="message is-error">
+                    <div class="message-body">
+                        <p>
+                            This feature needs "Storage" permissions to enable.
+                        </p>
                     </div>
                 </div>
             </section>

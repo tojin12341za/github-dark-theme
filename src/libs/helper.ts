@@ -28,9 +28,8 @@ const isEmpty = (data: Object) => {
     return Object.getOwnPropertyNames(data).length === 0;
 };
 
-const inSystemDarkMode = (): boolean => {
+const isSystemDarkMode = (): boolean => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
 };
 
-export { fetchDomainString, fetchUrlString, isUrlInList, isEmpty };
-export { inSystemDarkMode };
+export { fetchDomainString, fetchUrlString, isUrlInList, isEmpty, isSystemDarkMode };
