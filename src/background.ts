@@ -1,5 +1,5 @@
 import { config } from './config';
-import { isEmpty, fetchDomainString, fetchUrlString, isUrlInList, runtime, isSystemDarkMode } from './libs';
+import { isEmpty, fetchDomainString, fetchUrlString, isUrlInList, runtime } from './libs';
 import { browser } from 'webextension-polyfill-ts';
 import 'content-scripts-register-polyfill';
 
@@ -7,7 +7,7 @@ const initGithubDarkTheme = () => {
     browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         if (changeInfo.status === 'loading') {
             browser.storage.sync
-                .get([config.storageDomainList, config.storageExcludedUrlList, 'themeBasedOn'])
+                .get([config.storageDomainList, config.storageExcludedUrlList])
                 .then((data) => {
                     if (!tab) return;
                     if (!tab.url) return;
@@ -22,10 +22,7 @@ const initGithubDarkTheme = () => {
 
                     const useSystemPrefersScheme = data.themeBasedOn == 'system-preferred';
 
-                    if (
-                        isUrlInList(fetchDomainString(tab.url), data.domainList) &&
-                        (!useSystemPrefersScheme || (useSystemPrefersScheme && isSystemDarkMode()))
-                    ) {
+                    if (isUrlInList(fetchDomainString(tab.url), data.domainList)) {
                         browser.tabs.insertCSS(tab.id, {
                             file: config.cssFilePath,
                             runAt: 'document_start',
@@ -44,10 +41,10 @@ const initGithubDarkTheme = () => {
             .get([config.storageDomainList, config.storageExcludedUrlList])
             .then((data) => {
                 if (!isEmpty(data)) return data;
+
                 browser.storage.sync.set({
                     domainList: config.defaultDomainList,
                     excludedUrlList: config.defaultExcludedUrlList,
-                    themeBasedOn: config.themeBasedOn,
                 });
             })
             .then(initGithubDarkTheme);
