@@ -372,6 +372,9 @@ body {
         border-bottom: 1px solid $border-color !important;
     }
     /* # Search */
+    .header-search-current .jump-to-field-active {
+        color: $text-color !important;
+    }
     .code-list .code-list-item + .code-list-item {
         border-color: $border-color !important;
     }
