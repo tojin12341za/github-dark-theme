@@ -1,5 +1,4 @@
 div.container {
-
     h1,
     h2,
     h3,
@@ -40,7 +39,7 @@ div.container {
         }
 
         .disable {
-            &>a {
+            & > a {
                 background-color: $dropdown-bg-active !important;
             }
         }
@@ -66,7 +65,6 @@ div.container {
 }
 
 .border.rounded-1 {
-
     article.border-bottom {
         padding-left: 16px;
         padding-right: 16px;
@@ -74,10 +72,8 @@ div.container {
 
     .tabnav .tabnav-tab.selected,
     .tabnav .tabnav-tab[aria-current],
-    .tabnav .tabnav-tab[aria-selected=true] {
+    .tabnav .tabnav-tab[aria-selected='true'] {
         background-color: $bg-color;
         border-color: $file-row-active-bg;
     }
-
-    article.border-bottom .position-absolute .btn {}
 }
