@@ -187,12 +187,19 @@ body {
     }
     .dropdown-menu {
         background-color: $dropdown-bg !important;
+        border-color: $border-color;
         &:after {
             border-bottom-color: $dropdown-bg !important;
         }
         .user-status-emoji-only-header {
             background-color: $dropdown-bg !important;
         }
+        &:before {
+            border-bottom-color: $border-color;
+        }
+    }
+    .dropdown-divider {
+        border-color: $border-color;
     }
     .muted-link {
         color: $link-color !important;
@@ -221,6 +228,18 @@ body {
     }
     .dropdown-header {
         color: $faded-link-color !important;
+    }
+
+    .Popover-message--bottom-left:before,
+    .Popover-message--bottom-right:before,
+    .Popover-message--bottom:before {
+        border-top-color: $border-color !important;
+    }
+
+    .Popover-message--bottom-left:after,
+    .Popover-message--bottom-right:after,
+    .Popover-message--bottom:after {
+        border-top-color: $block-bg !important;
     }
 }
 
