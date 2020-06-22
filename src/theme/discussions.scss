@@ -15,8 +15,9 @@ body {
         .tabnav-tab {
             &.selected,
             &[aria-selected='true'] {
-                background: $bg-color !important;
-                color: $text-color !important;
+                background: $comment-bg !important;
+                color: $link-color !important;
+                border-color: $border-color;
             }
         }
     }
@@ -231,6 +232,7 @@ body {
     }
     .merge-status-item {
         background-color: $bg-color !important;
+        border-color: $border-color !important;
     }
     .gh-header-number {
         color: $faded-link-color;
