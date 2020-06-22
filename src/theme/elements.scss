@@ -241,6 +241,15 @@ body {
     .Popover-message--bottom:after {
         border-top-color: $block-bg !important;
     }
+
+
+    .Popover-message:before {
+        border-bottom-color: $border-color !important;
+    }
+
+    .Popover-message:after {
+        border-bottom-color: $block-bg !important;
+    }
 }
 
 .cc-ext .pagehead-actions .cc-classic-cta a {
