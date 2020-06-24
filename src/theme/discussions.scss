@@ -264,6 +264,10 @@ body {
     #partial-new-comment-form-actions div.bg-gray-light {
         background-color: transparent !important;
     }
+
+    .Label--gray-darker {
+        color: $text-color !important;
+    }
 }
 
 .AvatarStack-body {
