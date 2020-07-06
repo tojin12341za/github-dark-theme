@@ -55,8 +55,12 @@
             background-color: $bg-color !important;
         }
         .SelectMenu-item {
+            color: $link-color-selected !important;
             background-color: $block-bg !important;
             border-bottom: 1px solid $border-color !important;
+            &:hover {
+                background: lighten($block-bg, 10%) !important;
+            }
         }
         .SelectMenu-list {
             border-top: 1px solid $border-color !important;
