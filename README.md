@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/poychang/github-dark-theme.svg?branch=master)](https://travis-ci.org/poychang/github-dark-theme)
 
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/PoyChang)
+
 | For Chrome | For Firefox |
 | ---------- | ----------- |
 | [![For Chrome](https://i.imgur.com/0Zw4GqK.png)](https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp) | [![For Firefox](https://i.imgur.com/8oJLPg3.jpg)](https://addons.mozilla.org/addon/github-dark-theme/) |
