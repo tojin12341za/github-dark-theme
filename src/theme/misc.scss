@@ -70,6 +70,15 @@ img.network-tree {
     mix-blend-mode: lighten;
 }
 
+.js-network-graph-container {
+    filter: invert(1);
+    mix-blend-mode: lighten;
+}
+
+.js-network-graph-container canvas {
+    background: #f9f9f9;
+}
+
 /* Marketplace */
 
 .MarketplaceSideNav {
