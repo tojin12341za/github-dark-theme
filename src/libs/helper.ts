@@ -17,7 +17,7 @@ const fetchUrlString = (url: string): string => {
 const isUrlInList = (url: string, list: string[], endWithWildcard: boolean = false) => {
     var result = false;
     list.forEach((str: string) => {
-        let regex = new RegExp(`^${str}${endWithWildcard ? '\\w*' : ''}`, 'g');
+        let regex = new RegExp(`^${str}${endWithWildcard ? '\\w*' : '(\/+|$)'}`, 'g');
         result = result || url.match(regex) ? true : false;
     });
     return result;
