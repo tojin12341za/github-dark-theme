@@ -81,4 +81,10 @@ body {
     .Box-body {
         border-color: $border-color !important;
     }
+
+    auto-complete {
+        .autocomplete-item {
+            color: $text-color !important;
+        }
+    }
 }
