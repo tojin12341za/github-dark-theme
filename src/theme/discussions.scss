@@ -57,13 +57,14 @@ body {
         color: #aaa !important;
     }
     .Box-row {
+        background-color: $dropdown-bg !important;
         border-color: $border-color !important;
         &:first-of-type {
             border-color: transparent !important;
         }
     }
     .Box-row--focus-gray.navigation-focus {
-        background-color: #090705 !important;
+        background-color: $block-bg !important;
     }
     .discussion-sidebar-item + .discussion-sidebar-item {
         border-color: $border-color !important;
@@ -186,7 +187,7 @@ body {
         border-color: $border-color !important;
     }
     .diffbar {
-        background-color: transparent !important;
+        background-color: $tag-bg-color !important;
 
         .stale-files-tab {
             background-color: $bg-color !important;
