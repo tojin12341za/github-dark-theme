@@ -161,6 +161,7 @@ body {
         background-color: $bg-color !important;
         border-color: $border-color !important;
     }
+    .branch-action-item.border-gray-dark,
     .branch-action-item + .branch-action-item,
     .branch-action-item + .mergeability-details {
         border-color: $border-color !important;
