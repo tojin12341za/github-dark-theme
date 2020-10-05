@@ -32,6 +32,12 @@ li.notifications-list-item {
     border-color: $border-color !important;
 }
 
+.notifications-list-item:hover {
+    label {
+        background-color: transparent !important;
+    }
+}
+
 .notifications-list-item:hover,
 li.notifications-list-item:hover,
 .Box-row--hover-gray:hover {
