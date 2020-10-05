@@ -65,7 +65,7 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
 }
 
 .pr-toolbar {
-    background-color: $tag-bg-color !important;
+    background-color: transparent !important;
     .subset-files-tab {
         background-color: $bg-color !important;
         color: $link-color !important;
