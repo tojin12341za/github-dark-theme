@@ -31,10 +31,12 @@ body {
         border-color: $border-color !important;
     }
     /* Repo label (i.e. Private, Archived) */
-    .repohead .Label--outline,
-    .repo-list .Label--outline {
-        color: $text-color !important;
-        border-color: $light-border-color !important;
+    .Label {
+        &.Label--outline,
+        &.Label--gray {
+            color: $text-color !important;
+            border-color: $light-border-color !important;
+        }
     }
     .site-header {
         background: $head-bg !important;
