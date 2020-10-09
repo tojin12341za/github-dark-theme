@@ -24,3 +24,23 @@
 .logo-upload-container .upload-state p {
     color: $link-color !important;
 }
+
+#js-pjax-container {
+    background-color: $bg-color !important;
+}
+
+.permission-title {
+    color: $text-color !important;
+}
+
+.oauth-org-access-details {
+    background-color: $block-bg !important;
+}
+
+body.logged-in {
+    background-color: $bg-color !important;
+}
+
+.limited-access-emails, span.read-access {
+color: $text-color !important;
+}
