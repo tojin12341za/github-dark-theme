@@ -384,6 +384,13 @@ body {
     .header-search-current .jump-to-field-active {
         color: $text-color !important;
     }
+
+    .js-jump-to-badge-search-text-default,
+    .js-jump-to-badge-search-text-global,
+    .js-jump-to-badge-jump {
+        color: $text-color !important;
+    }
+
     .code-list .code-list-item + .code-list-item {
         border-color: $border-color !important;
     }
@@ -434,6 +441,9 @@ body {
     .Box-header {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
+        .text-mono{
+            background-color: $dropdown-bg !important;
+        }
     }
     .conversation-list-heading {
         border-color: $border-color !important;
