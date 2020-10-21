@@ -441,6 +441,9 @@ body {
     .Box-header {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
+        .text-mono{
+            background-color: $dropdown-bg !important;
+        }
     }
     .conversation-list-heading {
         border-color: $border-color !important;
