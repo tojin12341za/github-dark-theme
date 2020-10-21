@@ -50,3 +50,10 @@ li.notifications-list-item:hover,
         text-decoration: none;
     }
 }
+
+li.notifications-list-item.navigation-focus {
+    label {
+        background-color: transparent !important;
+    }
+    background-color: lighten($comment-bg, 1%) !important;
+}
