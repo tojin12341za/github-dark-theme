@@ -86,11 +86,11 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
 
 .highlight-source-diff {
     .pl-md {
-        color: $text-red-color;
-        background: rgba(179, 29, 40, 0.2);
+        color: $bright-text-color;
+        background: $text-red-color;
     }
     .pl-mi1 {
-        color: $text-green-color;
-        background: rgba(34, 134, 58, 0.2);
+        color: $bright-text-color;
+        background: $text-green-color;
     }
 }
