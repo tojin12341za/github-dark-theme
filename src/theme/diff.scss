@@ -83,3 +83,15 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
         background-color: $codecov-num-bg-color-partial !important;
     }
 }
+
+.highlight-source-diff {
+    .pl-md {
+        color: $text-red-color !important;
+        background: $diff-deletion !important;
+    }
+    .pl-mi1 {
+        color: $text-green-color !important;
+        background: $diff-addition !important;
+    }
+}
+
