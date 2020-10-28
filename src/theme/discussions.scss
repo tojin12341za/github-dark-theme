@@ -5,6 +5,9 @@ body {
         background-color: $tag-bg-color !important;
         border-color: $border-color !important;
     }
+    .color-bg-canvas {
+        background-color: $bg-color !important;
+    }
     .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
         background: $bg-color !important;
 
@@ -12,7 +15,7 @@ body {
             color: $text-color !important;
         }
 
-        .tabnav-tab {
+        .tabnav-tab[aria-selected='true'] {
             background: $block-bg !important;
             border: 1px solid $border-color;
 
@@ -188,7 +191,7 @@ body {
         border-color: $border-color !important;
     }
     .diffbar {
-        background-color: $tag-bg-color !important;
+        background-color: transparent !important;
 
         .stale-files-tab {
             background-color: $bg-color !important;
@@ -289,7 +292,7 @@ body {
     file-attachment {
         background-color: transparent !important;
     }
-    
+
     .write-content {
         background-color: transparent !important;
     }
