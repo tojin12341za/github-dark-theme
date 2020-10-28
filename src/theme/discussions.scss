@@ -191,7 +191,7 @@ body {
         border-color: $border-color !important;
     }
     .diffbar {
-        background-color: transparent !important;
+        background-color: $bg-color !important;
 
         .stale-files-tab {
             background-color: $bg-color !important;
