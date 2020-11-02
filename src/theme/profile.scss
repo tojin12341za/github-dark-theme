@@ -137,3 +137,12 @@
         }
     }
 }
+
+.calendar-graph .js-calendar-graph-svg {
+    text {
+        &.wday,
+        &.month {
+            fill: $text-color !important;
+        }
+    }
+}
