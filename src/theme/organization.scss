@@ -36,6 +36,14 @@
 }
 
 .project-column {
+    background-color: $head-bg !important;
+}
+
+.project-pane {
+    background-color: $head-bg !important;
+}
+
+.project-card {
     background-color: $comment-bg !important;
 }
 
