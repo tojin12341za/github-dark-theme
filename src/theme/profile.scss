@@ -150,3 +150,7 @@
 summary .color-text-primary {
     color: $text-color !important;
 }
+
+.form-group > label {
+    background-color: transparent !important;
+}

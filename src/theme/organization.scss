@@ -28,6 +28,7 @@
 }
 
 .menu-heading {
+    color: $text-color !important;
     background-color: $head-bg !important;
 }
 
@@ -207,8 +208,8 @@
 
 .height-full label, .width-full label, 
     .d-flex label, .flex-column label, 
-    .text-center label, .text-normal  label{
-    background-color: $dropdown-bg !important;
+    .text-center label, .text-normal label{
+    background-color: transparent !important;
     color: $text-color !important;
 }
 
