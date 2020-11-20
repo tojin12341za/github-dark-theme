@@ -172,8 +172,12 @@ img.network-tree {
 }
 
 /* Sponsors notice | Issue-#140 */
-.js-notice .js-notice-dismiss {
+.js-notice{
     background: $bg-color !important;
+}
+
+.js-notice-dismiss {
+    background-color: $block-bg !important;
 }
 
 /* Invite teammates | Issue-#163 */
