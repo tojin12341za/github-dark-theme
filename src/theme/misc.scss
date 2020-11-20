@@ -216,3 +216,8 @@ img.network-tree {
 .UnderlineNav-item {
     color: inherit !important;
 }
+
+/* Saved replies Write header */
+.js-write-tab, .js-preview-tab {
+    background-color: $dropdown-bg !important;
+}
