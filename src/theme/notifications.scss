@@ -66,6 +66,7 @@ li.notifications-list-item.navigation-focus {
     background-color: lighten($comment-bg, 1%) !important;
 }
 
-div.notifications-component-dialog-modal {
-    background-color: $bg-color !important;
+summary.text-gray {
+    background-color: $border-color !important;
 }
+
