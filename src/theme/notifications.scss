@@ -44,6 +44,14 @@ li.notifications-list-item:hover,
     background-color: $tag-bg-color !important;
 }
 
+li.notifications-list-item.notification-read {
+    background-color: $dropdown-bg !important;
+}
+
+li.notifications-list-item.notification-unread {
+    background-color: lighten($dropdown-bg, 3%) !important;
+}
+
 .filter-list {
     .filter-item:hover {
         background-color: $dropdown-bg !important;
