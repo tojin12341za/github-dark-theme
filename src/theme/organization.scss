@@ -82,6 +82,9 @@
         .clearfix {
             background-color: $bg-color !important;
         }
+        .SelectMenu-closeButton:hover {
+            color: $bright-text-color !important;
+        }
 
         footer {
             border-top: 1px solid $border-color !important;

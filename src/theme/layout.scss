@@ -231,6 +231,9 @@ body {
     .btn-octicon:hover {
         color: $bright-text-color !important;
     }
+    .octicon-x:hover {
+        fill: $bright-text-color !important;
+    }
     .btn-octicon-danger:hover {
         color: $text-red-color !important;
     }
