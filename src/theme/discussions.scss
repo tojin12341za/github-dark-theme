@@ -69,6 +69,9 @@ body {
     .Box-row--focus-gray.navigation-focus {
         background-color: $block-bg !important;
     }
+    .Box-row--unread {
+        box-shadow: 2px 0 0 $unread-border-color inset !important;
+    }
     .discussion-sidebar-item + .discussion-sidebar-item {
         border-color: $border-color !important;
     }
