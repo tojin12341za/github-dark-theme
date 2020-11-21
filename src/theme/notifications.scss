@@ -65,3 +65,8 @@ li.notifications-list-item.navigation-focus {
     }
     background-color: lighten($comment-bg, 1%) !important;
 }
+
+summary.text-gray {
+    background-color: $border-color !important;
+}
+
