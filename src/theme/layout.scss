@@ -113,6 +113,9 @@ body {
     :not(.commit-build-statuses) > a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
     }
+    .color-text-primary {
+        color: $text-color !important;
+    }
     div.commit-build-statuses {
         .text-green {
             color: $text-green-color !important;
@@ -230,6 +233,9 @@ body {
     }
     .btn-octicon:hover {
         color: $bright-text-color !important;
+    }
+    .octicon-x:hover {
+        fill: $bright-text-color !important;
     }
     .btn-octicon-danger:hover {
         color: $text-red-color !important;

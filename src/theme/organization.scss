@@ -28,6 +28,7 @@
 }
 
 .menu-heading {
+    color: $text-color !important;
     background-color: $head-bg !important;
 }
 
@@ -80,6 +81,9 @@
         }
         .clearfix {
             background-color: $bg-color !important;
+        }
+        .SelectMenu-closeButton:hover {
+            color: $bright-text-color !important;
         }
 
         footer {
@@ -207,13 +211,22 @@
 
 .height-full label, .width-full label, 
     .d-flex label, .flex-column label, 
-    .text-center label, .text-normal  label{
-    background-color: $dropdown-bg !important;
+    .text-center label, .text-normal label{
+    background-color: transparent !important;
     color: $text-color !important;
 }
 
 .signup-plan-card {
     border: none !important;
+}
+
+.signup-prompt {
+    background-color: $tag-bg-color !important;
+}
+
+.signup-prompt-bg {
+    background-color: $tag-bg-color !important;
+    background-image: none !important;
 }
 
 .pricing-matrix-column-tier {

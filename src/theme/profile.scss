@@ -146,3 +146,19 @@
         }
     }
 }
+
+summary {
+    color: $text-color !important;
+}
+
+.form-group > label {
+    background-color: transparent !important;
+}
+/* Date text for contribution timeline */
+span.color-bg-primary {
+    background-color: $bg-color !important;
+}
+
+div.color-bg-primary {
+    background-color: $bg-color !important;
+}
