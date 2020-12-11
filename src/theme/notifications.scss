@@ -52,6 +52,10 @@ li.notifications-list-item.notification-unread {
     background-color: lighten($dropdown-bg, 3%) !important;
 }
 
+li.notifications-list-item.notification-archived {
+    background-color: $dropdown-bg !important;
+}
+
 .filter-list {
     .filter-item:hover {
         background-color: $dropdown-bg !important;
