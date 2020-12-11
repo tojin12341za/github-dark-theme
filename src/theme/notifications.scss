@@ -1,10 +1,7 @@
 .notifications {
-    .read.list-group-item {
-        background-color: $dropdown-bg !important;
-        border-color: $border-color !important;
-    }
-
-    .unread.list-group-item {
+    .read.list-group-item,
+    .unread.list-group-item,
+    .archived.list-group-item {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
