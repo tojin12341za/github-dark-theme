@@ -29,14 +29,13 @@
     },
     "dependencies": {
         "angular": "^1.8.0",
-        "bulma": "^0.8.1",
+        "bulma": "^0.9.1",
         "bulma-extensions": "^6.2.7",
-        "content-scripts-register-polyfill": "^1.0.1"
+        "content-scripts-register-polyfill": "^1.0.5"
     },
     "devDependencies": {
         "@types/angular": "^1.7.0",
-        "@types/chrome": "0.0.104",
-        "@types/jquery": "^3.3.34",
+        "@types/chrome": "^0.0.128",
         "@wext/shipit": "^0.2.1",
         "copy-webpack-plugin": "^5.1.1",
         "css-loader": "^3.5.1",
