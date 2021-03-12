@@ -4,4 +4,4 @@ echo "----------------------------------------------------------------------"
 echo "Upload GitHub Dark Theme Chrome extension to Chrome Web Store"
 echo "----------------------------------------------------------------------"
 
-npx shipit chrome ./dist-chrome
+npm i shipit-cli shipit-deploy && npx shipit chrome ./dist-chrome
