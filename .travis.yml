@@ -11,12 +11,12 @@ script:
     - npm run build-firefox
 deploy:
     - provider: script
-      cleanup: true
+      skip_cleanup: true
       script: bash scripts/upload-chrome.sh
       on:
           branch: master
     - provider: script
-      cleanup: true
+      skip_cleanup: true
       script: bash scripts/upload-firefox.sh
       on:
           branch: master
