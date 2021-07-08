@@ -1,6 +1,6 @@
 # GitHub Dark Theme
 
-[![Build Status](https://travis-ci.org/poychang/github-dark-theme.svg?branch=master)](https://travis-ci.org/poychang/github-dark-theme)
+[![Build Status](https://travis-ci.com/poychang/github-dark-theme.svg?branch=master)](https://travis-ci.com/poychang/github-dark-theme)
 
 [![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/PoyChang)
 
