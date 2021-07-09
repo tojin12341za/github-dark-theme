@@ -14,6 +14,8 @@
 
 This package will change appearance of all GitHub pages to a dark theme, mostly based on Atom One Dark.
 
+Suggest you also turn on `Dark Mode` in your [GitHub settings](https://github.com/settings/appearance).
+
 Project forked from [vovanmix/github-dark-theme](https://github.com/vovanmix/github-dark-theme). Use Codemirror styles from [StylishThemes/GitHub-Dark](https://github.com/StylishThemes/GitHub-Dark/tree/master/themes/codemirror).
 
 ## Building
