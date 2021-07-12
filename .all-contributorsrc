@@ -24,6 +24,16 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "vladgogo",
+      "name": "Vlad Mikhaylovskiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22305539?v=4",
+      "profile": "https://github.com/vladgogo",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
