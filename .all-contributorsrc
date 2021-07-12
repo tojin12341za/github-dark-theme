@@ -57,6 +57,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "huyenltnguyen",
+      "name": "Huyen Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25715018?v=4",
+      "profile": "https://github.com/huyenltnguyen",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
