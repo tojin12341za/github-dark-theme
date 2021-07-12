@@ -47,6 +47,16 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "IamCathal",
+      "name": "Cathal O'Callaghan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6561327?v=4",
+      "profile": "http://cathaloc.dev",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,

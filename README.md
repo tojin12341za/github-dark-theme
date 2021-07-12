@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.queengoob.org"><img src="https://avatars.githubusercontent.com/u/5179191?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Queen Vinyl Darkscratch</b></sub></a><br /><a href="https://github.com/poychang/github-dark-theme/commits?author=vinyldarkscratch" title="Code">💻</a> <a href="#design-vinyldarkscratch" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/vladgogo"><img src="https://avatars.githubusercontent.com/u/22305539?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vlad Mikhaylovskiy</b></sub></a><br /><a href="https://github.com/poychang/github-dark-theme/commits?author=vladgogo" title="Code">💻</a> <a href="#design-vladgogo" title="Design">🎨</a></td>
     <td align="center"><a href="https://jiaming0708.github.io"><img src="https://avatars.githubusercontent.com/u/8855285?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jimmy</b></sub></a><br /><a href="https://github.com/poychang/github-dark-theme/commits?author=jiaming0708" title="Code">💻</a> <a href="#design-jiaming0708" title="Design">🎨</a></td>
+    <td align="center"><a href="http://cathaloc.dev"><img src="https://avatars.githubusercontent.com/u/6561327?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cathal O'Callaghan</b></sub></a><br /><a href="https://github.com/poychang/github-dark-theme/commits?author=IamCathal" title="Code">💻</a> <a href="#design-IamCathal" title="Design">🎨</a></td>
   </tr>
 </table>
 
