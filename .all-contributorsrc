@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "poychang",
+      "name": "Poy Chang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4879879?v=4",
+      "profile": "https://blog.poychang.net",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "github-dark-theme",
+  "projectOwner": "poychang",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
