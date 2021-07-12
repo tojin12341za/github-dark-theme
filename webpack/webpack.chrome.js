@@ -16,6 +16,10 @@ module.exports = merge(common, {
         },
     },
     plugins: [
+        // copy icons
+        new CopyPlugin([{ from: '.', to: '../app' }], {
+            context: 'src/promote',
+        }),
         // copy manifest
         new CopyPlugin([{ from: './manifest-chrome.json', to: '../manifest.json' }], {
             context: 'src/manifest',

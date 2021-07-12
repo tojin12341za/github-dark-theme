@@ -40,6 +40,10 @@ npm run build-chrome   # Builds the CSS to inject for Chrome
 npm run build-firefox  # Builds the CSS to inject for Firefox
 ```
 
+## Sponsors
+
+- [Anima App](https://www.animaapp.com/)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
