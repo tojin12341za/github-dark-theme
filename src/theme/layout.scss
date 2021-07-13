@@ -1,13 +1,22 @@
 /* # Layout */
 
+html {
+    background-color: inherit;
+}
+
 body {
     background-color: $bg-color !important;
     color: $text-color !important;
-    &.page-responsive{
-        .pagehead{
+    &.page-responsive {
+        .pagehead {
             background-color: $bg-color !important;
         }
     }
+
+    .UnderlineNav {
+        box-shadow: inset 0 -1px 0 $bg-color !important;
+    }
+
     .reponav-item {
         color: $faded-link-color !important;
         &.selected {
@@ -25,10 +34,12 @@ body {
         border-color: $border-color !important;
     }
     /* Repo label (i.e. Private, Archived) */
-    .repohead .Label--outline,
-    .repo-list .Label--outline {
-        color: $text-color !important;
-        border-color: $light-border-color !important;
+    .Label {
+        &.Label--outline,
+        &.Label--gray {
+            color: $text-color !important;
+            border-color: $light-border-color !important;
+        }
     }
     .site-header {
         background: $head-bg !important;
@@ -54,8 +65,12 @@ body {
         border-color: $border-color !important;
         color: $link-color !important;
     }
+    .jump-to-field-active {
+        color: $link-color !important;
+    }
     .flash {
         background-color: $tag-bg-color !important;
+        background-image: none !important;
         color: $link-color !important;
     }
     .blankslate {
@@ -68,6 +83,7 @@ body {
     }
     .menu-item {
         border-bottom: 1px solid $border-color !important;
+        background-color: $dropdown-bg !important;
     }
     .menu-item:hover {
         background-color: #41464f !important;
@@ -99,6 +115,9 @@ body {
     }
     :not(.commit-build-statuses) > a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
+    }
+    .color-text-primary {
+        color: $text-color !important;
     }
     div.commit-build-statuses {
         .text-green {
@@ -218,6 +237,9 @@ body {
     .btn-octicon:hover {
         color: $bright-text-color !important;
     }
+    .octicon-x:hover {
+        fill: $bright-text-color !important;
+    }
     .btn-octicon-danger:hover {
         color: $text-red-color !important;
     }
@@ -325,7 +347,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-   .Box:not(.ml-1) {
+    .Box:not(.ml-1) {
         background-color: $block-bg !important;
         border-color: $border-color !important;
     }
@@ -369,6 +391,16 @@ body {
         border-bottom: 1px solid $border-color !important;
     }
     /* # Search */
+    .header-search-current .jump-to-field-active {
+        color: $text-color !important;
+    }
+
+    .js-jump-to-badge-search-text-default,
+    .js-jump-to-badge-search-text-global,
+    .js-jump-to-badge-jump {
+        color: $text-color !important;
+    }
+
     .code-list .code-list-item + .code-list-item {
         border-color: $border-color !important;
     }
@@ -407,6 +439,9 @@ body {
     .bg-gray-light {
         background-color: $tag-bg-color !important;
     }
+    .bg-yellow-light {
+        background-color: $search-bg-color !important;
+    }
     .tag-info {
         color: $link-color !important;
         .tag-name {
@@ -416,28 +451,38 @@ body {
     .Box-header {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
+        .text-mono {
+            background-color: transparent !important;
+        }
     }
-    .conversation-list-heading .inner {
-        background: $dropdown-bg;
+    .conversation-list-heading {
+        border-color: $border-color !important;
+
+        .inner {
+            background: $bg-color;
+        }
+    }
+    .simple-conversation-list > li {
+        border-color: $border-color !important;
     }
     .application-main {
         .flex-wrap {
             background-color: transparent !important;
         }
 
-        & > main{
+        & > main {
             & > div.border-bottom.border-gray-light {
                 background-color: $bg-color !important;
             }
 
-            & > .site-subnav + div{
+            & > .site-subnav + div {
                 background-color: $bg-color !important;
 
-                .bg-blue-light{
+                .bg-blue-light {
                     background-color: transparent !important;
                 }
 
-                .text-gray-light{
+                .text-gray-light {
                     color: $text-color !important;
                 }
             }
@@ -450,12 +495,17 @@ body {
     .file-commit-form--full {
         background-color: $bg-color !important;
     }
+
+    .Header {
+        background-color: $head-bg !important;
+    }
 }
 
 @media (min-width: 768px) {
     body {
         &.page-responsive {
-            .pagehead, .repohead.experiment-repo-nav {
+            .pagehead,
+            .repohead.experiment-repo-nav {
                 background-color: $head-bg !important;
             }
         }

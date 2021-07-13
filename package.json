@@ -1,17 +1,9 @@
 {
     "name": "github-dark-theme",
-    "version": "1.0.50",
+    "version": "1.1.29",
     "description": "change appearance of all GitHub pages to a dark theme",
     "license": "MIT",
     "author": "Poy Chang <poypost@gmail.com>",
-    "contributors": [
-        "Jeff Wu <crazy.alu@outlook.com>",
-        "Jimmy <jiaming0708@gmail.com>",
-        "Poy Chang <poypost@gmail.com>",
-        "Tariq <tariq.86@pm.me>",
-        "Vladimir Mikhaylovskiy <vlad@indiegogo.com>",
-        "Vinyl Darkscratch <vinyldarkscratch@gmail.com> (https://www.queengoob.org)"
-    ],
     "scripts": {
         "serve": "live-server",
         "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -27,27 +19,28 @@
         "url": "git@github.com:poychang/github-dark-theme.git"
     },
     "dependencies": {
-        "@types/angular": "^1.7.0",
-        "angular": "^1.7.9",
-        "bulma": "^0.8.1",
-        "bulma-extensions": "^6.2.7"
+        "angular": "^1.8.2",
+        "bulma": "^0.9.3",
+        "bulma-extensions": "^6.2.7",
+        "content-scripts-register-polyfill": "^1.0.5"
     },
     "devDependencies": {
-        "@types/chrome": "0.0.104",
-        "@types/jquery": "^3.3.34",
+        "@types/angular": "^1.8.2",
+        "@types/chrome": "^0.0.146",
         "@wext/shipit": "^0.2.1",
-        "copy-webpack-plugin": "^5.1.1",
-        "css-loader": "^3.5.1",
+        "copy-webpack-plugin": "^5.1.2",
+        "css-loader": "^3.6.0",
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "live-server": "^1.2.1",
         "node-sass": "^4.13.1",
-        "prettier": "^2.0.4",
+        "prettier": "^2.2.1",
         "rimraf": "^3.0.2",
         "sass-loader": "^8.0.2",
         "style-loader": "^1.1.3",
         "ts-loader": "^6.2.2",
         "typescript": "~3.8.3",
         "url-loader": "^4.1.0",
+        "webextension-polyfill-ts": "^0.15.0",
         "webpack": "~4.42.1",
         "webpack-cli": "~3.3.11",
         "webpack-merge": "~4.2.2"

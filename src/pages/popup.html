@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>GitHub Dark Theme</title>
-        <link rel="stylesheet" type="text/css" href="bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="bulma-extensions.min.css" />
+        <link rel="stylesheet" type="text/css" href="bulma.css" />
+        <link rel="stylesheet" type="text/css" href="bulma-extensions.css" />
         <style>
             body {
                 width: 450px;
@@ -14,7 +14,7 @@
     </head>
     <body ng-app="app">
         <div ng-controller="popupController as ctrl">
-            <section class="section">
+            <section class="section" ng-if="ctrl.hasPermissions">
                 <div class="container is-fluid">
                     <h1 class="title">GitHub Dark Theme</h1>
                     <p class="subtitle">
@@ -100,7 +100,6 @@
                         />
                         <label for="switchRoundedDefault">Enabled Dark Theme{{ctrl.useDarkTheme}}</label>
                     </div> -->
-                    <br/>
                     <div class="message is-warning">
                         <div class="message-body">
                             <p>
@@ -120,9 +119,18 @@
                     </div>
                 </div>
             </section>
+            <section class="section" ng-if="!ctrl.hasPermissions">
+                <div class="message">
+                    <div class="message-body">
+                        <p>
+                            This feature needs "Storage" and "Tabs" permissions to enable.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <script src="vendor.js"></script>
-        <script src="popup.js"></script>
+        <script type="application/javascript" src="vendor.js"></script>
+        <script type="application/javascript" src="popup.js"></script>
     </body>
 </html>

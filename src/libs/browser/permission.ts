@@ -1,54 +1,51 @@
-// TODO: Decoupling Chrome instance by https://github.com/mozilla/webextension-polyfill
 // REF: Chrome permission list https://developer.chrome.com/apps/declare_permissions
 // REF: Chrome permission API https://developer.chrome.com/apps/permissions
+import { browser, Manifest } from "webextension-polyfill-ts";
 
-const set = (origin: string, permission: string = '', cb: Function = undefined) => {
-    if (!cb) {
-        cb = granted => {
+const set = (origin: string, permission: Manifest.OptionalPermission, callback: (any) => void = undefined) => {
+    if (!callback) {
+        callback = granted => {
             console.log(`${origin} set ${permission} is ${granted ? 'granted' : 'not granted'}.`);
         };
     }
-    chrome.permissions.request(
+    browser.permissions.request(
         {
             origins: [origin], // e.g., http://www.google.com/
             permissions: [permission], // e.g., storage
         },
-        cb()
-    );
+    ).then(callback);
 };
 
-const remove = (origin: string, permission: string, cb: Function = undefined) => {
-    if (!cb) {
-        cb = removed => {
+const remove = (origin: string, permission: Manifest.OptionalPermission, callback: (any) => void = undefined) => {
+    if (!callback) {
+        callback = removed => {
             console.log(`${origin} set '${permission}' permission is ${removed ? 'removed' : 'not removed'}.`);
         };
     }
-    chrome.permissions.remove(
+    browser.permissions.remove(
         {
             origins: [origin],
             permissions: [permission],
-        },
-        cb()
-    );
+        }
+    ).then(callback);
 };
 
-const isSupport = (origin: string, permission: string, cb: Function = undefined) => {
-    if (!cb) {
-        cb = hasPermission => {
+const isSupport = (origin: string, permission: string, callback: (any) => void = undefined) => {
+    if (!callback) {
+        callback = hasPermission => {
             console.log(`${hasPermission ? 'Yes' : 'Not'}, ${origin} has '${permission}' permission.`);
         };
     }
-    chrome.permissions.contains(
+    browser.permissions.contains(
         {
             origins: [origin],
             permissions: [permission],
-        },
-        cb()
-    );
+        }
+    ).then(callback);
 };
 
 const print = () => {
-    chrome.permissions.getAll(permissions => console.table(permissions));
+    browser.permissions.getAll().then(permissions => console.table(permissions));
 };
 
 const permission = {

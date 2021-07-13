@@ -3,12 +3,12 @@ const config = {
     storageDomainList: 'domainList',
     storageExcludedUrlList: 'excludedUrlList',
     domainList: [],
-    defaultDomainList: ['github.com', 'gist.github.com'],
     excludedUrlList: [],
+    defaultDomainList: ['github.com', 'gist.github.com'],
     defaultExcludedUrlList: ['github.com/marketplace'],
     useSystemPrefersScheme: false,
     uninstallQuestionnaire:
-        'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c9PL4pURTlJSFdFUzZUSzNBNUs4N0JaQlhEUkRBTy4u',
+        'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c9PL4pUNFQ0QVY5UlA0TEtCVk5YNEZaQzQyVlZaTi4u',
 } as Config;
 
 interface Config {
@@ -16,8 +16,8 @@ interface Config {
     storageDomainList: string;
     storageExcludedUrlList: string;
     domainList: string[];
-    defaultDomainList: string[];
     excludedUrlList: string[];
+    defaultDomainList: string[];
     defaultExcludedUrlList: string[];
     useSystemPrefersScheme: boolean;
     uninstallQuestionnaire: string;

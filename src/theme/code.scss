@@ -9,12 +9,6 @@
     background-color: #3c414a !important;
 }
 
-code,
-pre,
-tt {
-    font-size: $font-size !important;
-}
-
 .blob-num {
     color: #636d83 !important;
 }
@@ -30,6 +24,10 @@ tt {
 
 .pl-k {
     color: #c678dd !important;
+}
+
+.pl-corl {
+    color: #61afef !important;
 }
 
 .pl-e,
@@ -93,4 +91,59 @@ input.tree-finder-input {
 
 a.js-tree-browser-result-anchor[aria-selected='true'] {
     background-color: $border-color !important;
+}
+
+/* # Jupyter Notebook */
+
+#notebook,
+.inner_cell {
+    background-color: $code-bg !important;
+}
+
+.input_prompt,
+.text_cell_render {
+    color: $link-color !important;
+}
+
+.input_area {
+    background-color: $code-dark-bg !important;
+    border: 1px solid #101213 !important;
+}
+
+.output pre,
+.n,
+.mi {
+    color: $code-default-color !important;
+}
+
+.k,
+.kn {
+    color: #c678dd !important;
+}
+
+.p {
+    color: #929fa7 !important;
+}
+
+.nb {
+    color: #61afef !important;
+}
+
+.o,
+.ow {
+    color: #d19a66 !important;
+}
+
+.s1,
+.s2 {
+    color: #98c379 !important;
+}
+
+.si,
+.se {
+    color: #c55 !important;
+}
+
+.nn {
+    color: #e36209 !important;
 }

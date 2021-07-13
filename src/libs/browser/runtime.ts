@@ -1,7 +1,7 @@
-// TODO: Decoupling Chrome instance by https://github.com/mozilla/webextension-polyfill
+import { browser } from "webextension-polyfill-ts";
 
 const setUninstallURL = (url: string) => {
-    chrome.runtime.setUninstallURL(url, () => {
+    browser.runtime.setUninstallURL(url).then(() => {
         console.log('We are sorry to see you go! :(');
     });
 };

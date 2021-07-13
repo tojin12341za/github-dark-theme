@@ -26,6 +26,7 @@ div.container {
     .sidebar-menu {
         background-color: $bg-color !important;
     }
+
     .sidebar-module {
         li {
             background-color: $bg-color !important;
@@ -57,7 +58,22 @@ div.container {
     .TagsearchPopover-list .TagsearchPopover-list-item:hover {
         background-color: $file-row-active-bg;
     }
+
     .border-top {
         border-top: 1px solid $border-color !important;
+    }
+}
+
+.border.rounded-1 {
+    article.border-bottom {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tabnav .tabnav-tab.selected,
+    .tabnav .tabnav-tab[aria-current],
+    .tabnav .tabnav-tab[aria-selected='true'] {
+        background-color: $bg-color;
+        border-color: $file-row-active-bg;
     }
 }

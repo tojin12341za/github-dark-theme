@@ -60,9 +60,11 @@ module.exports = {
         // copy bulma css
         new CopyPlugin(
             [
-                { from: './bulma/css/bulma.min.css', to: './bulma.min.css' },
+                { from: './bulma/css/bulma.css', to: './bulma.css' },
                 { from: './bulma/css/bulma.css.map', to: './bulma.css.map' },
-                { from: './bulma-extensions/dist/css/bulma-extensions.min.css', to: './bulma-extensions.min.css' },
+                { from: './bulma-extensions/dist/css/bulma-extensions.css', to: './bulma-extensions.css' },
+                { from: './webextension-polyfill/dist/browser-polyfill.js', to: './browser-polyfill.js' },
+                { from: './webextension-polyfill/dist/browser-polyfill.js.map', to: './browser-polyfill.js.map' },
             ],
             {
                 context: 'node_modules',

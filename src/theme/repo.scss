@@ -78,4 +78,17 @@ body {
     .text-blue {
         color: $text-color !important;
     }
+    .Box-body {
+        border-color: $border-color !important;
+    }
+
+    auto-complete {
+        .autocomplete-item {
+            color: $text-color !important;
+        }
+    }
+
+    .Progress{
+        background-color: $bg-color;
+    }
 }

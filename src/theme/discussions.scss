@@ -5,6 +5,9 @@ body {
         background-color: $tag-bg-color !important;
         border-color: $border-color !important;
     }
+    .color-bg-canvas {
+        background-color: $bg-color !important;
+    }
     .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
         background: $bg-color !important;
 
@@ -12,13 +15,25 @@ body {
             color: $text-color !important;
         }
 
-        .tabnav-tab {
+        .tabnav-tab[aria-selected='true'] {
+            background: $block-bg !important;
+            border: 1px solid $border-color;
+
             &.selected,
             &[aria-selected='true'] {
-                background: $bg-color !important;
-                color: $text-color !important;
+                background: $comment-bg !important;
+                border-color: $border-color;
+                color: $link-color !important;
             }
         }
+    }
+
+    .comment-form-head.tabnav {
+        background-color: $dropdown-bg !important;
+    }
+
+    .discussion-post .timeline-inline-comments {
+        background: $comment-bg !important;
     }
     .discussion-item-header {
         color: $text-color !important;
@@ -45,10 +60,17 @@ body {
         color: #aaa !important;
     }
     .Box-row {
+        background-color: $dropdown-bg !important;
         border-color: $border-color !important;
+        &:first-of-type {
+            border-color: transparent !important;
+        }
     }
     .Box-row--focus-gray.navigation-focus {
-        background-color: #090705 !important;
+        background-color: $block-bg !important;
+    }
+    .Box-row--unread {
+        box-shadow: 2px 0 0 $unread-border-color inset !important;
     }
     .discussion-sidebar-item + .discussion-sidebar-item {
         border-color: $border-color !important;
@@ -132,10 +154,6 @@ body {
     .discussion-item-review .blob-wrapper {
         border-color: $border-color !important;
     }
-    .discussion-item-icon {
-        background-color: $bg-color !important;
-        color: $bright-text-color !important;
-    }
     .discussion-item .renamed-is,
     .discussion-item .renamed-was {
         color: $bright-text-color !important;
@@ -149,6 +167,7 @@ body {
         background-color: $bg-color !important;
         border-color: $border-color !important;
     }
+    .branch-action-item.border-gray-dark,
     .branch-action-item + .branch-action-item,
     .branch-action-item + .mergeability-details {
         border-color: $border-color !important;
@@ -175,7 +194,7 @@ body {
         border-color: $border-color !important;
     }
     .diffbar {
-        background-color: $tag-bg-color !important;
+        background-color: $bg-color !important;
 
         .stale-files-tab {
             background-color: $bg-color !important;
@@ -224,6 +243,7 @@ body {
     }
     .merge-status-item {
         background-color: $bg-color !important;
+        border-color: $border-color !important;
     }
     .gh-header-number {
         color: $faded-link-color;
@@ -259,11 +279,28 @@ body {
     #partial-new-comment-form-actions div.bg-gray-light {
         background-color: transparent !important;
     }
-}
 
-.AvatarStack-body {
-    background-color: transparent !important;
-    .avatar {
+    .Label--gray-darker {
+        color: $text-color !important;
+    }
+
+    .AvatarStack-body {
         background-color: transparent !important;
+        .avatar {
+            background-color: transparent !important;
+        }
+    }
+
+    tab-container,
+    file-attachment {
+        background-color: transparent !important;
+    }
+
+    .write-content {
+        background-color: transparent !important;
+    }
+
+    .js-timeline-marker {
+        background-color: $bg-color !important;
     }
 }

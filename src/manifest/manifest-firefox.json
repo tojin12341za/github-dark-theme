@@ -3,23 +3,29 @@
     "name": "GitHub Dark Theme",
     "short_name": "GitHub Dark Theme",
     "description": "A Dark theme for all of GitHub based on Atom One Dark.",
-    "version": "1.0.50",
+    "version": "1.1.29",
     "applications": {
         "gecko": {
             "id": "{1dbe3fd3-f191-4a3b-a5d7-a6f95ed2aea1}"
         }
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*.github.com/*"
-            ],
-            "run_at": "document_start",
-            "css": [
-                "app/app.css"
-            ]
-        }
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_popup": "app/popup.html"
+    },
+    "background": {
+        "scripts": [
+            "app/vendor.js",
+            "app/background.js"
+        ]
+    },
+    "content_scripts": [],
+    "permissions": [
+        "tabs",
+        "storage",
+        "<all_urls>"
     ],
+    "optional_permissions": [],
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",

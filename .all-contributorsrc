@@ -1,0 +1,77 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "poychang",
+      "name": "Poy Chang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4879879?v=4",
+      "profile": "https://blog.poychang.net",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "vinyldarkscratch",
+      "name": "Queen Vinyl Darkscratch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5179191?v=4",
+      "profile": "https://www.queengoob.org",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "vladgogo",
+      "name": "Vlad Mikhaylovskiy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22305539?v=4",
+      "profile": "https://github.com/vladgogo",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "jiaming0708",
+      "name": "Jimmy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8855285?v=4",
+      "profile": "https://jiaming0708.github.io","login": "jiaming0708",
+      "name": "Jimmy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8855285?v=4",
+      "profile": "https://jiaming0708.github.io",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "IamCathal",
+      "name": "Cathal O'Callaghan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6561327?v=4",
+      "profile": "http://cathaloc.dev",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "huyenltnguyen",
+      "name": "Huyen Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25715018?v=4",
+      "profile": "https://github.com/huyenltnguyen",
+      "contributions": [
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "github-dark-theme",
+  "projectOwner": "poychang",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

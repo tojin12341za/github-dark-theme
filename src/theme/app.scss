@@ -7,7 +7,6 @@
 @import 'diff.scss';
 @import 'markdown.scss';
 @import 'discussions.scss';
-@import 'plugins.scss';
 @import 'repo.scss';
 @import 'files.scss';
 @import 'profile.scss';
@@ -17,6 +16,7 @@
 @import 'issues.scss';
 @import 'auth.scss';
 @import 'developer.scss';
-@import 'extensions/sourcegraph-ext.scss';
-@import 'extensions/octotree-ext.scss';
 @import 'alert.scss';
+@import 'license.scss';
+@import 'override.scss';
+@import 'extensions/!ext.scss';

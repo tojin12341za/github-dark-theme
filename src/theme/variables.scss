@@ -33,9 +33,14 @@ $diff-accent-font-color: #ccc;
 $code-bg: #282c34;
 $code-default-color: #abb2bf;
 $code-snippet-color: #af6161;
+$code-dark-bg: #222428;
 
 $button-bg-image: linear-gradient(-180deg, #535659 0%, #424549 90%);
 $button-bg-image-hover: linear-gradient(-180deg, #636669 0%, #525559 90%);
+$button-primary-bg-image: linear-gradient(-180deg,#34d058, #28a745 90%);
+$button-primary-bg-image-hover: linear-gradient(-180deg,#2fcb53, #269f42 90%);
+$button-danger-bg-image: linear-gradient(-180deg, #636669 0%, #525559 90%);
+$button-danger-bg-image-hover: linear-gradient(-180deg,#de4450, #cb2431 90%);
 $button-active-color: #4d78cc;
 
 $codecov-num-bg-color-missed: #ef6c6c;
@@ -44,12 +49,13 @@ $codecov-num-bg-color-partial: #fef04f;
 
 $bg-pending-color: #dbab09;
 
+$search-bg-color: #473f00;
 $alert-bg-color: #1e3f56;
 $alert-warning-bg-color: #d8937f;
 
 // Scrollbar
 $scrollbar-track: #464542;
-$scrollbar-thumb: rgba(85, 85, 85, 0.7);
+$scrollbar-thumb: #666666;
 
 // Profile contributions graph variables
 $contrib-color: #196127;
@@ -66,3 +72,6 @@ $contrib-color-3: lighten($contrib-color, 15%);
 $contrib-color-4: lighten($contrib-color, 30%);
 $contrib-color-5: lighten($contrib-color, 50%);
 */
+
+// Blue stripe on unread item
+$unread-border-color: #0366d6;

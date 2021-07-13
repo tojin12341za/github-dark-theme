@@ -4,7 +4,8 @@
     background-color: $border-color !important;
 }
 
-.profile-rollup-wrapper + .profile-rollup-wrapper {
+.profile-rollup-wrapper + .profile-rollup-wrapper,
+.profile-rollup-summarized + .profile-rollup-summarized {
     border-color: $border-color !important;
 }
 
@@ -42,11 +43,12 @@
     }
 }
 
+.user-status-circle-badge {
+    background-color: $block-bg !important;
+    border: 1px solid $border-color !important;
+}
 .user-status-message-wrapper {
     color: $link-color !important;
-}
-.user-status-emoji-only-header {
-    background-color: $bg-color !important;
 }
 .user-status-container {
     border: none !important;
@@ -69,6 +71,10 @@
 
 .pinned-item-name {
     color: $text-color !important;
+}
+
+.profile-timeline-card-wrapper {
+    border-color: transparent !important;
 }
 
 // Yearly Contributions graph
@@ -130,4 +136,29 @@
             color: $text-black-color !important;
         }
     }
+}
+
+.calendar-graph .js-calendar-graph-svg {
+    text {
+        &.wday,
+        &.month {
+            fill: $text-color !important;
+        }
+    }
+}
+
+summary {
+    color: $text-color !important;
+}
+
+.form-group > label {
+    background-color: transparent !important;
+}
+/* Date text for contribution timeline */
+span.color-bg-primary {
+    background-color: $bg-color !important;
+}
+
+div.color-bg-primary {
+    background-color: $bg-color !important;
 }

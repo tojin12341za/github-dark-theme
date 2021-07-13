@@ -1,6 +1,8 @@
 import * as angular from 'angular';
+import { browser } from "webextension-polyfill-ts";
 import { config } from './config';
-import { fetchDomainString, fetchUrlString, storage, tabs } from './libs';
+import { fetchDomainString, fetchUrlString } from './libs';
+import { tabs } from './libs';
 
 module app {
     'use strict';
@@ -10,6 +12,7 @@ module app {
     class PopupController {
         static $inject = ['$scope'];
         private scope: IPopupScope;
+        public hasPermissions: boolean = !!browser.storage;
         public domainList: string[];
         public excludedUrlList: string[];
         public yourDomain: string;
@@ -22,7 +25,7 @@ module app {
         }
 
         private init = () => {
-            storage.sync
+            browser.storage.sync
                 .get([config.storageDomainList, config.storageExcludedUrlList])
                 .then(data => {
                     this.domainList = data.domainList as string[];
@@ -40,55 +43,57 @@ module app {
         };
 
         public add = () => {
-            let activeTabInfo = tabs.getCurrentTab();
-            let url = this.yourDomain ? this.yourDomain : activeTabInfo.url;
-            let domain = fetchDomainString(url);
+            tabs.getCurrentTab()
+                .then(tab => {
+                    let url = this.yourDomain ? this.yourDomain : tab.url;
+                    let domain = fetchDomainString(url);
 
-            this.yourDomain = '';
+                    this.yourDomain = '';
 
-            if (domain === '') return;
-            if (this.domainList.includes(domain)) return;
+                    if (domain === '') return;
+                    if (this.domainList.includes(domain)) return;
 
-            this.domainList.push(domain);
-            storage.sync.set({ domainList: this.domainList });
+                    this.domainList.push(domain);
+                    browser.storage.sync.set({ domainList: this.domainList });
+                });
         };
 
         public remove = (domain: string) => {
             this.domainList = [...this.domainList.filter(d => d !== domain)];
-            storage.sync.set({ domainList: this.domainList });
+            browser.storage.sync.set({ domainList: this.domainList });
         };
 
         public addExcludedUrl = () => {
-            let activeTabInfo = tabs.getCurrentTab();
-            let url = this.yourExcludedDomain ? this.yourExcludedDomain : activeTabInfo.url;
-            let domain = fetchUrlString(url);
+            tabs.getCurrentTab()
+                .then(tab => {
+                    let url = this.yourExcludedDomain ? this.yourExcludedDomain : tab.url;
+                    let domain = fetchUrlString(url);
 
-            this.yourExcludedDomain = '';
+                    this.yourExcludedDomain = '';
 
-            if (domain === '') return;
-            if (this.excludedUrlList.includes(domain)) return;
+                    if (domain === '') return;
+                    if (this.excludedUrlList.includes(domain)) return;
 
-            this.excludedUrlList.push(domain);
-            storage.sync.set({ excludedUrlList: this.excludedUrlList });
+                    this.excludedUrlList.push(domain);
+                    browser.storage.sync.set({ excludedUrlList: this.excludedUrlList });
+                });
         };
 
         public removeExcludedUrl = (url: string) => {
             this.excludedUrlList = [...this.excludedUrlList.filter(u => u !== url)];
-            storage.sync.set({ excludedUrlList: this.excludedUrlList });
+            browser.storage.sync.set({ excludedUrlList: this.excludedUrlList });
         };
 
         public reset = () => {
             this.domainList = config.defaultDomainList;
             this.excludedUrlList = config.defaultExcludedUrlList;
-            storage.sync.clear().then(() => {
-                storage.sync.set({ domainList: config.defaultDomainList });
-                storage.sync.set({ excludedUrlList: config.defaultExcludedUrlList });
+            browser.storage.sync.clear().then(() => {
+                browser.storage.sync.set({ domainList: config.defaultDomainList });
+                browser.storage.sync.set({ excludedUrlList: config.defaultExcludedUrlList });
             });
         };
 
-        public navigate = (domain: string) => {
-            tabs.createTab(domain);
-        };
+        public navigate = (domain: string) => { tabs.addTab(domain); };
 
         public toggleDarkTheme = async (value: boolean) => {
             //TODO: save config into storage
