@@ -1,6 +1,6 @@
 # GitHub Dark Theme
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 [![Build Status](https://api.travis-ci.com/poychang/github-dark-theme.svg?branch=master)](https://travis-ci.com/poychang/github-dark-theme)
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/odkdlljoangmamjilkamahebpkgpeacp.svg)](https://chrome.google.com/webstore/detail/facebook-tracking-ad-remo/odkdlljoangmamjilkamahebpkgpeacp)
