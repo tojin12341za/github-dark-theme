@@ -162,3 +162,12 @@ span.color-bg-primary {
 div.color-bg-primary {
     background-color: $bg-color !important;
 }
+
+/* Tooltip on the activity graph */
+.svg-tip strong {
+    color: inherit !important;
+}
+
+.color-bg-default {
+    background-color: inherit !important;
+}
