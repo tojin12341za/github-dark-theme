@@ -91,6 +91,23 @@ body {
         color: $text-color !important;
         border-color: $border-color !important;
     }
+    .TimelineItem:before {
+        background-color: $light-border-color !important;
+    }
+    .TimelineItem {
+        .color-bg-inset {
+            background-color: $bg-color !important;
+        }
+
+        .color-bg-default {
+            background-color: $bg-color !important;
+        }
+
+        .timeline-comment {
+            background-color: $bg-color !important;
+            border-color: $light-border-color !important;
+        }
+    }
     .TimelineItem.TimelineItem--condensed .TimelineItem-badge {
         background: $bg-color !important;
     }
