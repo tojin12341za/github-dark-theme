@@ -300,20 +300,16 @@ body {
         background-color: transparent !important;
     }
 
-    .js-timeline-marker {
-        background-color: $bg-color !important;
-    }
-
     // Comments on Discussions page
     .discussion-timeline-item {
         // The background color of main comments
-        .color-bg-default {
+        .timeline-comment div.color-bg-default {
             background-color: $comment-bg !important;
             border-color: $light-border-color !important;
         }
 
         // The background color of nested comments
-        .color-bg-inset {
+        .timeline-comment div.color-bg-inset {
             background-color: $comment-bg !important;
         }
 
