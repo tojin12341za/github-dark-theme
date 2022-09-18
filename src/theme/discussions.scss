@@ -211,9 +211,16 @@ body {
         border-color: $border-color !important;
     }
     .timeline-comment {
-        color: $text-color !important;
         background-color: $comment-bg !important;
         border-color: $border-color !important;
+        
+        .comment-body {
+            color: $text-color !important;
+
+            a {
+                text-decoration: underline;
+            }
+        }
 
         &.current-user {
             background-color: $comment-bg !important;
