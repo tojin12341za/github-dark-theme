@@ -23,8 +23,22 @@
     }
 }
 
+.pinned-item-list-item {
+    & .Label--secondary {
+        color: $text-color !important;
+        border-color: $light-border-color !important;
+    }
+}
+
 .Box-row--gray {
     background-color: $comment-bg !important;
+}
+
+.Box-row {
+    & .Label--secondary {
+        color: $text-color !important;
+        border-color: $light-border-color !important;
+    }
 }
 
 .menu-heading {

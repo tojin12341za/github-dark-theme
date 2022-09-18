@@ -33,14 +33,6 @@ body {
         background: $head-bg !important;
         border-color: $border-color !important;
     }
-    /* Repo label (i.e. Private, Archived) */
-    .Label {
-        &.Label--outline,
-        &.Label--gray {
-            color: $text-color !important;
-            border-color: $light-border-color !important;
-        }
-    }
     .site-header {
         background: $head-bg !important;
         border-color: $border-color !important;
